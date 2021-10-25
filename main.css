@@ -1,11 +1,11 @@
 @font-face {
     font-family: "kanitN";
-    src: url(./fonts/Kanit-Medium.ttf);
+    src: url(Kanit-Medium.ttf);
 }
 
 @font-face {
     font-family: "kanit3";
-    src: url(./fonts/Kanit-Light.ttf);
+    src: url(Kanit-Light.ttf);
 }
 
 * {
