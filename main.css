@@ -1,0 +1,2555 @@
+@font-face {
+    font-family: "kanitN";
+    src: url(./fonts/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: "kanit3";
+    src: url(./fonts/Kanit-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 1440px;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    top: 50px;
+    
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  
+  background-color: #000000;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+   top: 120px;
+    width: 344px;
+    height: 345px;
+    /* margin-top: 120px;
+    margin-left: 150px; */
+    padding: 25px 0;
+    list-style: none;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, .2);
+  }
+  .menu__item {
+    display: block;
+    padding: 13px 24px;
+    color: rgb(0, 0, 0);
+    margin-left: 33px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+
+  }
+  .menu__item:hover {
+    background-color: #ffffff;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    /* left: 0; */
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+header{
+    /* position: absolute; */
+    width: 1440px;
+    margin: 0 auto;
+    
+}
+.img_1{
+    font-size: 45px;
+    margin: 0px 645.21px 0px 568.79px;
+    
+}
+.hamburger-menu{
+    margin-left: 51px;
+}
+
+.header_container{
+    display: flex;
+    min-height: 120px;
+    align-items: center;
+    padding: 0px 0px;
+    background-color: rgb(255, 255, 255);
+    /* justify-content: center; */
+}
+
+
+
+
+.conteiner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+.first_blocks {
+    display: flex;
+    justify-content: center;
+}
+
+.philip {
+    width: 720px;
+    height: 570px;
+}
+
+.black_block {
+    width: 720px;
+    height: 570px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "kanitN";
+    display: flex;
+    flex-direction: column;
+    padding: 107px 109px 151px 108px;
+}
+
+.data_and_lifestyle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+
+}
+
+.at_vero {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 29px;
+    width: 503px;
+    height: 42px;
+}
+
+.data_1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 7px;
+    width: 136px;
+    height: 21px;
+}
+
+.lifestyle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    width: 75px;
+    height: 24px;
+}
+
+.lorem_1 {
+    width: 503px;
+    height: 42px;
+    font-family: "kanit3";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+}
+
+.read_me {
+    border: 1px solid white;
+    width: 198px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read_me_1 {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.between {
+    display: flex;
+    padding: 59px 1205px 30px 149px;
+}
+
+.FEATURED {
+    width: 86px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+}
+
+.second_blocks {
+    display: flex;
+    justify-content: center;
+    padding: 0 148px 0 147px;
+}
+
+.one_man {
+    width: 557px;
+    height: 368px;
+    margin-right: 27px;
+}
+
+.img_3 {
+    width: 557px;
+    height: 368px;
+}
+
+.img_4 {
+    width: 557px;
+    height: 368px;
+}
+
+.data_and_lifestyle_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+    margin-top: 26px;
+
+}
+
+.data_12 {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    width: 136px;
+    height: 21px;
+}
+
+.lifestyle_2 {
+    font-family: "kanitN";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    width: 75px;
+    height: 24px;
+}
+
+.lorem_12 {
+    width: 557px;
+    height: 72px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1F1F1D;
+    margin-bottom: 19px;
+}
+
+.text {
+    font-family: "kanit3";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    width: 557px;
+    height: 54px;
+}
+
+.third_blocks {
+    display: flex;
+    justify-content: center;
+    padding: 63px 148px 63px 148px;
+}
+
+.img_5 {
+    width: 363px;
+    height: 240px;
+}
+
+.one_block .two_block .three_block {
+    width: 365px;
+    height: 325px;
+}
+
+.one_block {
+    margin-right: 27px;
+}
+
+.two_block {
+    margin-right: 27px;
+}
+
+.data_and_lifestyle_3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    margin-top: 18px;
+}
+
+.data_13 {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    width: 117px;
+    height: 18px;
+}
+
+.lifestyle_3 {
+    font-family: "kanitN";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    width: 57px;
+    height: 18px;
+}
+
+.lorem_13 {
+    width: 363px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    text-transform: uppercase;
+
+}
+
+.mini_box {
+    padding: 0px 600px 71.33px 602px;
+}
+
+.SEE_All {
+    background-color: #303030;
+    width: 238px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SEE_All_2 {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.fourth_block {
+    display: flex;
+    justify-content: center;
+}
+.white_foto {
+    width: 571.5px;
+    height: 360px;
+    
+}
+.black_block2 {
+    width: 571.5px;
+    height: 360px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 123.67px 120.5px 123.33px 116px;
+    display: flex;
+    flex-direction: column;
+}
+.issue {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    width: 335px;
+    height: 51px;
+}
+.button1{
+    border: 1px solid white;
+    width: 198px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.sub{
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 106px;
+    height: 21px;
+}
+.img_8{
+    width: 571.5px;
+    height: 360px;
+}
+
+.between1 {
+    display: flex;
+    padding: 63.57px 1191px 31px 150px;
+}
+
+.INTERVIEWS {
+    width: 99px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+}
+
+
+.third_blocks_q {
+    display: flex;
+    justify-content: center;
+    padding: 0px 148px 38px 148px;
+}
+
+.img_5_q {
+    width: 363px;
+    height: 240px;
+}
+
+.one_block_q .two_block_q .three_block_q {
+    width: 365px;
+    height: 325px;
+}
+
+.one_block_q {
+    margin-right: 27px;
+}
+
+.two_block_q {
+    margin-right: 27px;
+}
+
+.data_and_lifestyle_3_q {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    margin-top: 9px;
+}
+
+.data_13_q {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    width: 117px;
+    height: 18px;
+}
+
+.lifestyle_3_q {
+    font-family: "kanitN";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    width: 66px;
+    height: 18px;
+}
+
+.lorem_13_q {
+    width: 363px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    text-transform: uppercase;
+
+}
+
+.mini_box_1{
+    padding: 0px 600px 33px 602px;
+}
+.SEE_All_12{
+        background-color: #303030;
+        width: 238px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.SEE_ALL_1_1{
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.between1_1 {
+    display: flex;
+    padding: 0px 1191px 28px 150px;
+}
+
+.INTERVIEWS_1 {
+    width: 99px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+}
+
+
+.third_blocks_q_1 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 148px 31px 148px;
+}
+
+.img_5_q_1 {
+    width: 363px;
+    height: 240px;
+}
+
+.one_block_q_1 .two_block_q_1 .three_block_q_1 {
+    width: 365px;
+    height: 325px;
+}
+
+.one_block_q_1 {
+    margin-right: 27px;
+}
+
+.two_block_q_1 {
+    margin-right: 27px;
+}
+
+.data_and_lifestyle_3_q_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    margin-top: 22px;
+}
+
+.data_13_q_1 {
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 6px;
+    width: 117px;
+    height: 18px;
+}
+
+.lifestyle_3_q_1 {
+    font-family: "kanitN";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    width: 31px;
+    height: 18px;
+}
+
+.lorem_13_q_1 {
+    width: 363px;
+    height: 27px;
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    text-transform: uppercase;
+
+}
+
+.mini_box_1_1{
+    padding: 0px 600px 88px 602px;
+}
+.SEE_All_12_1{
+        background-color: #303030;
+        width: 238px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.SEE_ALL_1_1_1{
+    font-family: "kanitN";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.last_block{
+    width: 1440px;
+    height: 163px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+    align-items:center;
+}
+.text_suffix{
+    width: 142px;
+    height: 27px;
+    margin-bottom: 38px;
+}
+.last_text{
+    width: 102px;
+    height: 18px;
+    font-family: "kanit3";
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 25px;
+}
+
+
+@media (max-width:1280px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 45.5px 0 44.5px 0;
+        width: 1240px;
+        height: 120px;
+    }
+
+    .img_1 {
+        width: 157px;
+        height: 30px;
+    }
+
+    header{
+    /* position: absolute; */
+    width: 1240px;
+    margin: 0 auto;
+    
+}
+.img_1{
+    font-size: 45px;
+    margin: 0px 541.21px 0px 466.79px;
+    
+}
+.hamburger-menu{
+    margin-left: 51px;
+}
+    .conteiner {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    .first_blocks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .philip {
+        width: 620px;
+        height: 570px;
+    }
+
+    .black_block {
+        width: 620px;
+        height: 570px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: "kanitN";
+        display: flex;
+        flex-direction: column;
+
+        padding: 125px 104px 124px 104px;
+    }
+
+    .data_and_lifestyle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+
+    }
+
+    .at_vero {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 23px;
+        width: 394px;
+        height: 84px;
+    }
+
+    .data_1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 7px;
+        width: 136px;
+        height: 21px;
+    }
+
+    .lifestyle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        width: 75px;
+        height: 24px;
+    }
+
+    .lorem_1 {
+        width: 411px;
+        height: 63px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+    }
+
+    .read_me {
+        border: 1px solid white;
+        width: 198px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .read_me_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .between {
+        display: flex;
+        padding: 59px 1000px 21.31px 154px;
+    }
+
+    .FEATURED {
+        width: 86px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .second_blocks {
+        display: flex;
+        justify-content: center;
+        padding: 0 149px 0 150px;
+    }
+
+    .one_man {
+        width: 445px;
+        height: 301px;
+        margin-right: 30px;
+    }
+
+    .img_3 {
+        width: 445px;
+        height: 301px;
+    }
+
+    .img_4 {
+        width: 445px;
+        height: 301px;
+    }
+
+
+    .data_and_lifestyle_2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        margin-top: 26.69px;
+
+    }
+
+    .data_12 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+
+    .lifestyle_2 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 57px;
+        height: 18px;
+    }
+
+    .lorem_12 {
+        width: 455px;
+        height: 72px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #1F1F1D;
+        margin-bottom: 19px;
+    }
+
+    .text {
+        width: 455px;
+        height: 81px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+
+    .third_blocks {
+        display: flex;
+        justify-content: center;
+        padding: 59px 151px 85px 148px;
+
+    }
+
+    .img_5 {
+        width: 295px;
+        height: 195px;
+    }
+
+    .one_block .two_block .three_block {
+        width: 295px;
+        height: 306px;
+    }
+
+    .one_block {
+        margin-right: 30px;
+    }
+
+    .two_block {
+        margin-right: 30px;
+    }
+
+    .data_and_lifestyle_3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-top: 17px;
+    }
+
+    .data_13 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+
+    .lifestyle_3 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 57px;
+        height: 18px;
+    }
+
+    .lorem_13 {
+        width: 293px;
+        height: 54px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+
+    }
+
+    .mini_box {
+        padding: 0px 501px 60.33px 501px;
+    }
+
+    .SEE_All {
+        background-color: #303030;
+        width: 238px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SEE_All_2 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .fourth_block {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .white_foto {
+        width: 470px;
+        height: 360px;
+        
+    }
+    
+    .black_block2 {
+        width: 469.59px;
+        height: 360px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 123.67px 77.59px 123.33px 57px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .issue {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 51px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        width: 335px;
+        height: 51px;
+        text-align: center;
+    }
+    .button1{
+        border: 1px solid white;
+        width: 198px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .sub{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+        width: 106px;
+        height: 21px;
+    }
+    .img_8{
+        width: 470px;
+        height: 360px;
+    }
+
+    .between1 {
+        display: flex;
+        padding: 60.67px 991px 29px 150px;
+    }
+    
+    .INTERVIEWS {
+        width: 99px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q {
+        display: flex;
+        justify-content: center;
+        padding: 0px 149px 60px 148px;
+    }
+    
+    .img_5_q {
+        width: 295px;
+        height: 195px;
+    }
+    
+    .one_block_q .two_block_q .three_block_q {
+        width: 295px;
+        height: 306px;
+    }
+    
+    .one_block_q {
+        margin-right: 30px;
+    }
+    
+    .two_block_q {
+        margin-right: 30px;
+    }
+    
+    .data_and_lifestyle_3_q {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-top: 17px;
+    }
+    
+    .data_13_q {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 66px;
+        height: 18px;
+    }
+    
+    .lorem_13_q {
+        width: 293px;
+        height: 54px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+    .mini_box_1{
+        padding: 0px 501px 60px 501px;
+    }
+    .SEE_All_12{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+    .between1_1{
+        display: flex;
+        padding: 0px 991px 19.52px 150px;
+    }
+    
+    .INTERVIEWS_1 {
+        width: 99px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q_1 {
+        display: flex;
+        justify-content: center;
+        padding: 0px 149px 60px 148px;
+    }
+    
+    .img_5_q_1 {
+        width: 295px;
+        height: 195px;
+    }
+    
+    .one_block_q_1 .two_block_q_1 .three_block_q_1 {
+        width: 295px;
+        height: 308.48px;
+    }
+    
+    .one_block_q_1 {
+        margin-right: 30px;
+    }
+    
+    .two_block_q_1 {
+        margin-right: 30px;
+    }
+    
+    .data_and_lifestyle_3_q_1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-top: 19.48px;
+    }
+    
+    .data_13_q_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q_1 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 31px;
+        height: 18px;
+    }
+    
+    .lorem_13_q_1 {
+        width: 293px;
+        height: 54px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+    .mini_box_1_1{
+        padding: 0px 501px 106.52px 501px;
+    }
+    .SEE_All_12_1{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .last_block{
+        width: 1240px;
+        height: 163px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: rgb(255, 255, 255);
+        align-items:center;
+    }
+    .text_suffix{
+        width: 142px;
+        height: 27px;
+        margin-bottom: 39px;
+    }
+    .last_text{
+        width: 102px;
+        height: 18px;
+        font-family: "kanit3";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .header{
+        width: 768px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 22.34px 0 22.66px 0;
+        width: 768px;
+        height: 65px;
+    }
+
+    .img_1 {
+        width: 105px;
+        height: 20px;
+    }
+
+    header{
+    /* position: absolute; */
+    width: 768px;
+    margin: 0 auto;
+    
+}
+.img_1{
+    font-size: 45px;
+    margin: 0px 331px 0px 285px;
+    
+}
+.hamburger-menu{
+    margin-left: 23px;
+}
+
+    .conteiner {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .first_blocks {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .philip {
+        width: 385px;
+        height: 354px;
+
+    }
+
+    .img_2 {
+        width: 385px;
+        height: 354px;
+
+    }
+
+    .black_block {
+        width: 383px;
+        height: 354px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: "kanitN";
+        display: flex;
+        flex-direction: column;
+        padding: 72px 18px 72px 21px;
+    }
+
+    .data_and_lifestyle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+
+    }
+
+    .at_vero {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 31px;
+        width: 344px;
+        height: 27px;
+    }
+
+    .data_1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+        margin-bottom: 20px;
+    }
+
+    .lifestyle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        width: 75px;
+        height: 24px;
+        display: none;
+    }
+
+    .lorem_1 {
+        width: 343px;
+        height: 54px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-bottom: 31px;
+    }
+
+    .read_me {
+        border: 1px solid white;
+        width: 198px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .read_me_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .between {
+        display: flex;
+        padding: 60px 658px 21px 24px;
+    }
+
+    .FEATURED {
+        width: 86px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .second_blocks {
+        display: flex;
+        justify-content: center;
+        padding: 0 24px;
+    }
+
+    .one_man {
+        width: 345px;
+        height: 228px;
+        margin-right: 30px;
+    }
+
+    .img_3 {
+        width: 345px;
+        height: 228px;
+    }
+
+    .img_4 {
+        width: 345px;
+        height: 228px;
+    }
+
+
+    .data_and_lifestyle_2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        margin-top: 21px;
+
+    }
+
+    .data_12 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+
+    .lifestyle_2 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 57px;
+        height: 18px;
+    }
+
+    .lorem_12 {
+        width: 345px;
+        height: 54px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+        margin-bottom: 21px;
+    }
+
+    .text {
+        width: 345px;
+        height: 63px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks {
+        display: flex;
+        justify-content: center;
+        padding: 36px 24px 49px 24px;
+    }
+
+    .img_5 {
+        width: 220px;
+        height: 145px;
+    }
+
+    .one_block .two_block .three_block {
+        width: 220px;
+        height: 247px;
+    }
+
+    .one_block {
+        margin-right: 30px;
+    }
+
+    .two_block {
+        margin-right: 30px;
+    }
+
+    .data_and_lifestyle_3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-top: 17px;
+    }
+
+    .data_13 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+
+    .lifestyle_3 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 57px;
+        height: 18px;
+    }
+
+    .lorem_13 {
+        width: 220px;
+        height: 48px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+
+    }
+
+    .mini_box {
+        padding: 0px 265px 60px 265px;
+    }
+
+    .SEE_All {
+        background-color: #303030;
+        width: 238px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SEE_All_2 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .fourth_block {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .white_foto {
+        width: 359px;
+        height: 275px;
+        
+    }
+    
+    .black_block2 {
+        width: 359.69px;
+        height: 275.24px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 89.74px 80.69px 89.49px 81px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .text_1{
+        width: 177px;
+        height: 27px;
+    } */
+    .issue {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        
+        width: 177px;
+        height: 27px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
+    .button1{
+        border: 1px solid white;
+        width: 198px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .sub{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+        width: 106px;
+        height: 21px;
+    }
+    .img_8{
+        width: 359px;
+        height: 275px;
+    }
+    .between1 {
+        display: flex;
+        padding: 53px 645px 32px 24px;
+    }
+    
+    .INTERVIEWS {
+        width: 99px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q {
+        display: flex;
+        justify-content: center;
+        padding: 0px 24px;
+    }
+    
+    .img_5_q {
+        width: 220px;
+        height: 145px;
+    }
+    
+    .one_block_q .two_block_q .three_block_q {
+        width: 220px;
+        height: 241px;
+    }
+    
+    .one_block_q {
+        margin-right: 30px;
+    }
+    
+    .two_block_q {
+        margin-right: 30px;
+    }
+    
+    .data_and_lifestyle_3_q {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    .data_13_q {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 66px;
+        height: 18px;
+    }
+    
+    .lorem_13_q {
+        width: 220px;
+        height: 48px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+    .mini_box_1{
+        padding: 53px 265px 33px 265px;
+    }
+    .SEE_All_12{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .between1_1 {
+        display: flex;
+        padding:  0px 645px 26.39px 24px;
+    }
+    
+    .INTERVIEWS_1 {
+        width: 99px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q_1 {
+        display: flex;
+        justify-content: center;
+        padding: 0px 24px;
+    }
+    
+    .img_5_q_1 {
+        width: 220px;
+        height: 144.26px;
+    }
+    
+    .one_block_q_1 .two_block_q_1 .three_block_q_1 {
+        width: 220px;
+        height: 238.61px;
+    }
+    
+    .one_block_q_1 {
+        margin-right: 30px;
+    }
+    
+    .two_block_q_1 {
+        margin-right: 30px;
+    }
+    
+    .data_and_lifestyle_3_q_1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-top: 13.35px;
+    }
+    
+    .data_13_q_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q_1 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 31px;
+        height: 18px;
+    }
+    
+    .lorem_13_q_1 {
+        width: 220px;
+        height: 48px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+    .mini_box_1_1{
+        padding: 48px 265px 70px 265px;
+    }
+    .SEE_All_12_1{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .last_block{
+        width: 768px;
+        height: 163px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: rgb(255, 255, 255);
+        align-items:center;
+    }
+    .text_suffix{
+        width: 142px;
+        height: 27px;
+        margin-bottom: 39px;
+    }
+    .last_text{
+        width: 102px;
+        height: 18px;
+        font-family: "kanit3";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    }
+   
+}
+
+@media (max-width:400px) {
+    .header{
+        width: 320px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 22.34px 0 22.66px 0;
+        width: 320px;
+        height: 65px;
+    }
+
+    .img_1 {
+        width: 105px;
+        height: 20px;
+    }
+
+    .conteiner {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+        header{
+    /* position: absolute; */
+    width: 320px;
+    margin: 0 auto;
+    
+}
+.img_1{
+    font-size: 45px;
+    margin: 0px 107px 0px 61px;
+    
+}
+.hamburger-menu{
+    margin-left: 23px;
+}
+
+    .first_blocks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .philip {
+        width: 320px;
+        height: 294px;
+
+    }
+
+    .img_2 {
+        width: 320px;
+        height: 294px;
+
+    }
+
+    .black_block {
+        width: 320px;
+        height: 246px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: "kanitN";
+        display: flex;
+        flex-direction: column;
+        padding: 15px 13px 32px 12px;
+    }
+
+    .data_and_lifestyle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+
+    }
+
+    .at_vero {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        width: 295px;
+        height: 27px;
+    }
+
+    .data_1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+        margin-bottom: 20px;
+    }
+
+    .lifestyle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        width: 75px;
+        height: 24px;
+        display: none;
+    }
+
+    .lorem_1 {
+        width: 295px;
+        height: 54px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    .read_me {
+        border: 1px solid white;
+        width: 198px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .read_me_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+
+    .between {
+        display: flex;
+        padding: 43px 221px 16px 12px;
+    }
+
+    .FEATURED {
+        width: 86px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .second_blocks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 13px 0 12px;
+    }
+
+    .one_man {
+        width: 295px;
+        height: 195px;
+        margin-bottom: 215.41px;
+    }
+
+    .img_3 {
+        width: 295px;
+        height: 195px;
+    }
+
+    .img_4 {
+        width: 295px;
+        height: 195px;
+    }
+
+
+    .data_and_lifestyle_2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        margin-top: 16px;
+
+    }
+
+    .data_12 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 117px;
+        height: 18px;
+    }
+
+    .lifestyle_2 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 57px;
+        height: 18px;
+        display: none;
+    }
+
+    .lorem_12 {
+        width: 295px;
+        height: 54px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+        margin-bottom: 21px;
+    }
+
+    .text {
+        width: 295px;
+        height: 63px;
+        font-family: "kanit3";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1F1F1D;
+    }
+
+
+    .third_blocks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 13px 0 12px;
+    }
+
+    .img_5 {
+        width: 295px;
+        height: 194.31px;
+    }
+
+    .one_block .two_block .three_block {
+        width: 295px;
+        height: 265px;
+
+    }
+
+    .one_block {
+        margin-bottom: 28px;
+        margin-top: 27px;
+        margin-right: 0px;
+
+    }
+
+    .two_block {
+        margin-bottom: 27px;
+        margin-right: 0px;
+    }
+
+    .one_block {
+        margin-right: 0px;
+
+    }
+
+    /*
+    .two_block{
+        margin-bottom: 28px;
+    } */
+    .data_and_lifestyle_3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        margin-top: 17px;
+    }
+
+    .data_13 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 156.89px;
+        height: 18px;
+    }
+
+    .lifestyle_3 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 76.43px;
+        height: 18px;
+    }
+
+    .lorem_13 {
+        width: 295px;
+        height: 24px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+
+    }
+
+    .mini_box {
+        padding: 37px 42px 43px 40px;
+    }
+
+    .SEE_All {
+        background-color: #303030;
+        width: 238px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SEE_All_2 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    .fourth_block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .white_foto {
+        width: 320px;
+        height: 245px;
+        
+    }
+    
+    .black_block2 {
+        width: 319.72px;
+        height: 174.52px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 39.84px 60.72px 38.68px 61px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .text_1{
+        width: 177px;
+        height: 27px;
+    } */
+    .issue {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        
+        width: 177px;
+        height: 27px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
+    .button1{
+        border: 1px solid white;
+        width: 198px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .sub{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+        width: 106px;
+        height: 21px;
+    }
+    .img_8{
+        width: 320px;
+        height: 245px;
+    }
+    .between1 {
+        display: flex;
+        padding: 43.39px 210px 16px 11px;
+    }
+    
+    .INTERVIEWS {
+        width: 99px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 13.57px 0px 10px;
+    }
+    
+    .img_5_q {
+        width: 296px;
+        height: 209px;
+    }
+    
+    .one_block_q .two_block_q .three_block_q {
+        width: 296.43px;
+        height: 280px;
+    }
+    
+    .one_block_q {
+        margin-bottom: 28px;
+        margin-right: 0px;
+    }
+
+    .two_block_q {
+        margin-bottom: 27px;
+        margin-right: 0px;
+    }
+
+    
+    .data_and_lifestyle_3_q {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-top: 14px;
+    }
+    
+    .data_13_q {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 156.89px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        width: 76.43px;
+        height: 18px;
+    }
+    
+    .lorem_13_q {
+        width: 295px;
+        height: 24px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+
+    .mini_box_1{
+        padding: 37px 43px 43px 39px;
+    }
+    .SEE_All_12{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .between1_1 {
+        display: flex;
+        padding: 0px 261px 16px 11px;
+    }
+    
+    .INTERVIEWS_1 {
+        width: 48px;
+        height: 27px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1F1F1D;
+    }
+
+    .third_blocks_q_1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 13.57px 0px 11px;
+    }
+    
+    .img_5_q_1 {
+        width: 296px;
+        height: 209px;
+    }
+    
+    .one_block_q_1 .two_block_q_1 .three_block_q_1 {
+        width: 295px;
+        height: 259px;
+    }
+    
+    .one_block_q_1 {
+        margin-bottom: 28px;
+        margin-right: 0px;
+    }
+
+    .two_block_q_1 {
+        margin-bottom: 27px;
+        margin-right: 0px;
+    }
+
+    
+    .data_and_lifestyle_3_q_1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    
+    .data_13_q_1 {
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 156.89px;
+        height: 18px;
+    }
+    
+    .lifestyle_3_q_1 {
+        font-family: "kanitN";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        text-align: right;
+        width: 76.43px;
+        height: 18px;
+    }
+    
+    .lorem_13_q_1 {
+        width: 295px;
+        height: 24px;
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1D;
+        text-transform: uppercase;
+    
+    }
+
+    .mini_box_1_1{
+        padding: 37px 43px 43px 39px;
+    }
+    .SEE_All_12_1{
+            background-color: #303030;
+            width: 238px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .SEE_ALL_1_1_1{
+        font-family: "kanitN";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .last_block{
+        width: 320px;
+        height: 163px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: rgb(255, 255, 255);
+        align-items:center;
+    }
+    .text_suffix{
+        width: 142px;
+        height: 27px;
+        margin-bottom: 39px;
+    }
+    .last_text{
+        width: 102px;
+        height: 18px;
+        font-family: "kanit3";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    }
+
+}
